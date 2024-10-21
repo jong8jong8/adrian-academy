@@ -1,2 +1,2 @@
 # Adrian Academy
-I ❤️ theories. 
+I :hearts: theories. 
