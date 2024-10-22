@@ -3,9 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Mathjax -->
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css">
+    
+    <!-- pseudocode -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.css">    
     <script src="https://cdn.jsdelivr.net/npm/pseudocode@latest/build/pseudocode.min.js"></script>
+
+    <!-- highlight.js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
     <title>Adrian Academy</title>
 </head>
 <body>
@@ -18,6 +30,20 @@ $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
         \PRINT \texttt{'hello world'}
         \end{algorithmic}
     </pre>
+
+    <pre><code class="language-javascript">
+        // Using require
+        const hljs = require('highlight.js');
+
+        // Using ES6 import syntax
+        import hljs from 'highlight.js';
+    </code></pre>
+
+    <pre><code class="language-python">
+        print("Hello world!")
+    </code></pre>
+
+
     <script>
         pseudocode.renderElement(document.getElementById("hello-world-code"));
     </script>
